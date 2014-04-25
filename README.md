@@ -7,9 +7,11 @@ LLNW collectd packaging for Debian/Ubuntu
 Building the package:
 ---------------------
 
-* Extract the source tree into 'collectd':
+* Fetch the [current version] and save it as `collectd-5.4.1-llnw1.orig.tar.gz`
+  in the root of this repo
+* Extract the source tree into 'collectd/':
 
-    `tar xvzf ~/distfiles/collectd-5.4.1-llnw1.tar.gz -C collectd --strip-components=1`
+    `tar xvzf ~/distfiles/collectd-5.4.1-llnw1.orig.tar.gz -C collectd --strip-components=1`
 * `cd collectd`
 * `dpkg-buildpackage -us -uc`
 
@@ -18,3 +20,6 @@ Subtree maintenance:
 
 * `git subtree pull --prefix collectd git://git.tokkee.org/pkg-collectd master --squash` - merge or backout any conflicts
 * `dch` - add a changelog entry and match the version to the new dist version
+
+
+  [current version]: https://github.com/llnw/collectd/releases/download/collectd-5.4.1-llnw1/collectd-5.4.1.llnw1.tar.gz

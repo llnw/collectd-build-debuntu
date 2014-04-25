@@ -1,11 +1,13 @@
-collectd (5.4.1-2) UNRELEASED; urgency=medium
+collectd (5.4.1-llnw1) unstable; urgency=medium
 
-  * debian/control:
-    - Added libupsclient-dev as primary alternate build-dep to
-      libupsclient1-dev; thanks to Laurent Bigonville for reporting this and
-      Marc Fournier for sending a patch (Closes: #730397).
+  * llnw1 patchset
+      - Writer plugin for OpenTSDB (also a @LLNW project)
+      - Build fixes for embedded libperl
+      - gstat module for FreeBSD
+      - A netstat module for FreeBSD and Linux
+      - Allow the exec module to proceed as root - this needs configuration in the future
 
- -- Sebastian Harl <tokkee@debian.org>  Sun, 12 Jan 2014 17:41:45 +0100
+ -- Kevin Bowling <kbowling@llnw.com>  Fri, 25 Apr 2014 01:26:38 -0700
 
 collectd (5.4.1-1) unstable; urgency=medium
 

@@ -55,7 +55,82 @@ confflags = --host=$(DEB_HOST_GNU_TYPE) \
 			--without-libstatgrab \
 			--without-included-ltdl \
 			--disable-static \
-			--enable-all-plugins
+			--disable-all-plugins
+
+# LLNW confflags
+confflags += --enable-ipv6
+
+confflags += --enable-aggregation
+confflags += --enable-amqp
+confflags += --enable-apache
+confflags += --enable-bind
+confflags += --enable-conntrack
+confflags += --enable-contextswitch
+confflags += --enable-cpu
+confflags += --enable-csv
+confflags += --enable-curl
+confflags += --enable-curl-json
+confflags += --enable-curl_xml
+confflags += --enable-cgroups
+confflags += --enable-dbi
+confflags += --enable-df
+confflags += --enable-disk
+confflags += --enable-entropy
+confflags += --enable-ethstat
+confflags += --enable-exec
+confflags += --enable-filecount
+confflags += --enable-ipmi
+confflags += --enable-iptables
+confflags += --enable-ipvs
+confflags += --enable-irq
+confflags += --enable-java
+confflags += --enable-libvirt
+confflags += --enable-load
+confflags += --enable-logfile
+confflags += --enable-lvm
+confflags += --enable-md
+confflags += --enable-memcached
+confflags += --enable-memory
+confflags += --enable-modbus
+confflags += --enable-mysql
+confflags += --enable-netlink
+confflags += --enable-nfs
+confflags += --enable-nginx
+confflags += --enable-ntpd
+confflags += --enable-numa
+confflags += --enable-perl
+confflags += --enable-ping
+confflags += --enable-powerdns
+confflags += --enable-processes
+confflags += --enable-python
+confflags += --enable-sensors
+confflags += --enable-snmp
+confflags += --enable-statsd
+confflags += --enable-swap
+confflags += --enable-syslog
+confflags += --enable-table
+confflags += --enable-tail
+confflags += --enable-tcpconns
+confflags += --enable-tokyotyrant
+confflags += --enable-unixsock
+confflags += --enable-uptime
+confflags += --enable-users
+confflags += --enable-vmem
+
+confflags += --enable-write_graphite
+confflags += --enable-write_http
+confflags += --enable-write_tsdb
+
+confflags += --enable-match_empty_counter
+confflags += --enable-match_hashed
+confflags += --enable-match_regex
+confflags += --enable-match_timediff
+confflags += --enable-match_value
+
+confflags += --enable-target_notification
+confflags += --enable-target_replace
+confflags += --enable-target_scale
+confflags += --enable-target_set
 
 # These plugins do not provide any functionality under Linux.
 # MacOS only (requires IO Kit):

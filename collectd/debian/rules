@@ -59,6 +59,8 @@ confflags = --host=$(DEB_HOST_GNU_TYPE) \
 
 # LLNW confflags
 confflags += --enable-ipv6
+confflags += --enable-write_tsdb
+confflags += --enable-netstat
 
 confflags += --enable-aggregation
 confflags += --enable-amqp
@@ -79,6 +81,7 @@ confflags += --enable-entropy
 confflags += --enable-ethstat
 confflags += --enable-exec
 confflags += --enable-filecount
+confflags += --enable-interface
 confflags += --enable-ipmi
 confflags += --enable-iptables
 confflags += --enable-ipvs
@@ -102,6 +105,7 @@ confflags += --enable-perl
 confflags += --enable-ping
 confflags += --enable-powerdns
 confflags += --enable-processes
+confflags += --enable-protocols
 confflags += --enable-python
 confflags += --enable-sensors
 confflags += --enable-snmp
@@ -119,7 +123,6 @@ confflags += --enable-vmem
 
 confflags += --enable-write_graphite
 confflags += --enable-write_http
-confflags += --enable-write_tsdb
 
 confflags += --enable-match_empty_counter
 confflags += --enable-match_hashed

@@ -1,3 +1,11 @@
+collectd (5.4.1-llnw2) unstable; urgency=medium
+
+  * llnw2 patchset
+      - Switch from credis to hiredis and build redis plugin
+      - Enable postgresql plugin
+
+ -- Kevin Bowling <kbowling@llnw.com>  Fri, 25 Apr 2014 01:26:38 -0700
+
 collectd (5.4.1-llnw1) unstable; urgency=medium
 
   * llnw1 patchset

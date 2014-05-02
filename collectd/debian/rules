@@ -61,6 +61,9 @@ confflags = --host=$(DEB_HOST_GNU_TYPE) \
 confflags += --enable-ipv6
 confflags += --enable-write_tsdb
 confflags += --enable-netstat
+confflags += --with-libhiredis
+confflags += --enable-redis
+confflags += --disable-write_redis
 
 confflags += --enable-aggregation
 confflags += --enable-amqp
@@ -103,6 +106,7 @@ confflags += --enable-ntpd
 confflags += --enable-numa
 confflags += --enable-perl
 confflags += --enable-ping
+confflags += --enable-postgresql
 confflags += --enable-powerdns
 confflags += --enable-processes
 confflags += --enable-protocols
@@ -157,9 +161,6 @@ confflags += --disable-onewire
 
 # libclntsh is required for the oracle plugin.
 confflags += --disable-oracle
-
-# libcredis is required for the *redis plugins.
-confflags += --disable-redis --disable-write_redis
 
 # librouteros is required for the routeros plugin.
 confflags += --disable-routeros

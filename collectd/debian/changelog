@@ -1,3 +1,11 @@
+collectd (5.4.1-llnw3) unstable; urgency=medium
+
+  * llnw3 patchset
+      - Backport graphite metric names filter
+      - Additionally filter () in graphite metric names
+
+ -- Kevin Bowling <kbowling@llnw.com>  Fri, 05 May 2014 20:33:10 -0700
+
 collectd (5.4.1-llnw2) unstable; urgency=medium
 
   * llnw2 patchset

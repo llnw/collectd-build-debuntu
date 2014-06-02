@@ -1,3 +1,13 @@
+collectd (5.4.1-llnw4) unstable; urgency=medium
+
+  * llnw4 patchset
+      - Add global HostTags setting to write_tsdb for appending tags to all
+      metrics
+      - Add TSDBPrefix and TSDBTags to target_set for enhancing metrics using
+      collectd's filter chains
+
+ -- Kevin Bowling <kbowling@llnw.com>  Mon, 02 Jun 2014 16:04:00 -0700
+
 collectd (5.4.1-llnw3) unstable; urgency=medium
 
   * llnw3 patchset

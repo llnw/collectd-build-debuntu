@@ -1,3 +1,10 @@
+collectd (5.4.1-llnw5) unstable; urgency=medium
+
+  * llnw5 patchset
+      - Fix bugs in TSDB changes from llnw4
+
+ -- Kevin Bowling <kbowling@llnw.com>  Mon, 02 Jun 2014 22:08:00 -0700
+
 collectd (5.4.1-llnw4) unstable; urgency=medium
 
   * llnw4 patchset

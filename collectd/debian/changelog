@@ -1,3 +1,10 @@
+collectd (5.4.1-llnw6) unstable; urgency=medium
+
+  * llnw6 patchset
+      - Uninitialized variable use write_tsdb config did not have HostTags
+
+ -- Kevin Bowling <kbowling@llnw.com>  Mon, 11 Jun 2014 16:07:00 -0700
+
 collectd (5.4.1-llnw5) unstable; urgency=medium
 
   * llnw5 patchset
